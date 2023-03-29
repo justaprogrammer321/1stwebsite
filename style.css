@@ -1,0 +1,528 @@
+*{ 
+   margin: 0;
+    padding: 0;
+     
+}
+.html,body{
+    margin:0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  overflow-x: hidden;
+
+}
+   
+.logo img{
+    height: 50px;
+    width:  50px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-image: linear-gradient(orange,blue) 1;
+    padding-top: 1px;
+}
+.logo{
+    width: 20%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.welcome{
+   
+    margin-left: 390px;
+    margin-top: -100px;
+    margin-bottom: 60px;
+    font-size: 100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: lightskyblue;
+    animation-name: appear;
+    animation-delay:4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity:0;
+}
+.logo1{
+    top: -30px ;
+    left:550px ;
+    position: relative;
+    height:400px;
+    width: 330px;
+    border: 3px solid black;
+    border-radius: 10px;
+    animation-name: appear;
+    opacity: 0;
+    animation-delay:4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  
+}
+@keyframes appear {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+.navbar{
+    display: flex;
+    background-color: black;
+}
+.navlist{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.navlist li{
+    list-style: none;
+    padding: 25px 45px;
+}
+.navlist li a{
+    color:white;
+    text-decoration: none;
+    
+}
+.navlist li a:hover{
+    color:rgb(144, 142, 142);
+    text-decoration: none;
+}
+.right-nav{
+    margin-top: 15px;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+.btn{
+    margin-top: 10px;
+    margin-right: 1000px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px 30px;
+    background-color: rgb(151, 255, 47);
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+.btn:hover{
+    box-shadow: 2px 2px white;
+
+}
+.firstsection .top1{
+    width: 40px;
+    height: 60px;
+    background-color: rgb(91, 91, 206);
+    position: fixed;
+    left: 1370px;
+    top: 700px;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+.main-box0{
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    height: 50rem;
+    width: 100%;
+}
+.cursor
+{
+    position: relative;
+    z-index: 2;
+    top: -500px;
+    left: -1000px;
+    color: rgb(157, 157, 150);
+    transform: rotate(225deg);
+    animation-name: movecursor;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: bounce1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce1 {
+    0%{margin-left: 0px; margin-top: 0px;}
+    50%{margin-left: 0px; margin-top: -300px;}
+    100%{margin-left: 0px; margin-top: 0px;}
+}
+.box2{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+    animation-name: bounce2;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce2 {
+    0%{margin-left: 1300px; margin-top: -100px;}
+    50%{margin-left: 1300px; margin-top: -200px;}
+    100%{margin-left: 1300px; margin-top: -100px;}
+}
+.box3{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 650px;
+    margin-top: -100px;
+    animation-name: bounce3;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce3 {
+    0%{margin-left: 650px; margin-top: -100px;}
+    50%{margin-left: 650px; margin-top: -100px;}
+    100%{margin-left: 650px; margin-top: 0px;}
+}
+.box4{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 550px;
+    margin-top: -200px;
+    animation-name: bounce4;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce4 {
+    0%{margin-left: 325px; margin-top: 0px;}
+    50%{margin-left: 325px; margin-top: -300px;}
+    100%{margin-left: 325px; margin-top: 0px;}
+}
+.box5{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left: 9750px;
+    margin-top: -200px;
+    animation-name: bounce5;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce5 {
+    0%{margin-left: 975px; margin-top: 0px;}
+    50%{margin-left: 975px; margin-top: -400px;}
+    100%{margin-left: 975px; margin-top: 0px;}
+}
+@keyframes movecursor {
+    0%{top: -500px;left: -1000px;opacity: 1;}
+    97%{ top: -160px;left: -750px;opacity: 1;}
+    100%{ top: -160px;left: -750px;opacity: 0;}
+
+}
+.beforeani{
+  width: 650px;
+  height: 70px;
+  background: white;
+  position: relative;
+  top: 200px;
+  left: 390px;
+  border-radius:20px ;
+  animation-name: toptob;
+  animation-duration: 4s;
+  opacity: 0;
+}
+@keyframes toptob{
+    0%{opacity:0.5; top: 30px;}
+    100%{opacity: 1;}
+}
+  .searchbox
+  {
+     display: flex;
+    padding: 12px;
+    z-index: 1;
+   }
+  .searchbox:hover{
+    box-shadow: 2px 2px 2px 2px aliceblue;
+    border-radius: 20px;
+  }
+  .searchbox img{
+    padding: 5px 5px;
+    border-right-width: 5px;
+    animation-name:darkerborder;
+    animation-duration: 2ms;
+    animation-delay: 6s;
+  }
+  @keyframes darkerborder {
+    0%{border: 2px solid white; }
+    100%{border: 2px solid black;}
+  }
+
+.searchbox p{
+    background-color: white;
+    color: lightslategrey;
+    position: relative;
+    left: 20px;
+    font-size: 35px;
+
+}
+.main-box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: darkslategray;
+    
+}
+.secondclass img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    border: 5px solid black;
+}
+.secondclass{
+    width:50%;
+}
+.firstsection{
+    height: 450vh;
+}
+.firstclass{
+    font-size: large;
+    background-color: grey;
+    padding: 150px 190px;
+    width: 500px;
+
+}
+.text-b{
+      font-size: 50px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text-small{
+    padding: 10px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: solid;
+}
+.firstclass a{
+    padding: 15px 15px;
+    background-color: yellow;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+/*this is the second section*/
+.main-box1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: darkslategray
+}
+.secondclass1{
+    width:50%;
+}
+
+.firstclass1{
+    font-size: large;
+    background-color: grey;
+    padding: 150px 190px;
+    width: 500px;
+
+}
+.text-b1{
+      font-size: 50px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text-small1{
+    padding: 10px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: solid;
+}
+.firstclass1 a{
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: yellow;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.secondclass1 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    border: 5px solid black;
+}
+/*this is the third part*/
+.main-box2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: darkslategray;
+    
+}
+.thirdclass img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    border: 5px solid black;
+}
+.thirdclass{
+    width:50%;
+}
+
+
+.firstclass2{
+    font-size: large;
+    background-color: grey;
+    padding: 150px 190px;
+    width: 500px;
+
+}
+.text-b2{
+      font-size: 50px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text-small2{
+    padding: 10px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: solid;
+}
+.firstclass2 a{
+    padding: 15px 15px;
+    background-color: yellow;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+/*this is the fourth part that has card*/
+.main-box3{
+    
+    align-items: center;
+    text-align: center;
+    background-color: rgb(4, 4, 42);
+    padding: 50px 50px;
+}
+.topic{
+    font-size: 70px;
+    padding: 20px;
+    color: aqua;
+    font-family: monospace;
+    
+}
+.card{
+    display: flex;
+    color: white;
+    gap: 20px;
+}
+.card p{
+    padding: 60px 60px;
+}
+.card a{
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.heading{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card1{
+    border: 3px solid rgb(93, 153, 205);
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px rgb(56, 12, 111) ;
+}
+
+.card1 img{
+    height: 200px;
+    width: 200px;
+}
+.card2{
+    border: 3px solid  rgb(93, 153, 205);
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px rgb(56, 12, 111) ;
+}
+.card2 img{
+    height: 200px;
+    width: 200px
+}
+.card3{
+    border: 3px solid  rgb(93, 153, 205);
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 2px rgb(56, 12, 111) ;
+}
+.card3 img{
+    height: 200px;
+    width: 200px
+}
+.experts{
+    height:800px;
+    background-color: gray;
+    overflow: hidden;
+    
+}
+.header{
+    margin: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+.sidebyside{
+    position: relative;
+    display: flex;
+    margin-right: 280px;
+    gap: 100px;
+    text-align: center;
+    margin-left: 280px;
+    margin-top:100px ;
+}
+.firstp{
+    border: 3px transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    padding: 40px;
+}
+.firstp img{
+    border-radius: 50%;
+}
+.firstp h1{
+     margin-top: 20px;
+}
+.secondp{
+    border: 3px transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    padding: 40px;
+}
+.secondp img{
+    border-radius: 50%;
+    
+}
+.secondp h1{
+    margin-top: 20px;
+}
+.fa {
+    padding: 40px;
+    margin-top: 50px;
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa-twitter::before {
+    color: black;
+    height: 30px;
+    font-size: 50px;
+  }
+  .fa-instagram::before{
+    
+    color: black;
+    height: 50px;
+    font-size: 50px;
+  }
